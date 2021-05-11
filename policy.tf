@@ -40,7 +40,7 @@ resource "intersight_hyperflex_node_config_policy" "hyperflex_node_config_policy
     object_type = "organization.Organization"
     moid        = data.intersight_organization_organization.org.results[0].moid
   }
-  name = "HX-${var.env}_Node_Configuration_Policy"
+  name = "${var.env}_HX_Node_Configuration_Policy"
   description = "Created by Terraform"
 }
 
