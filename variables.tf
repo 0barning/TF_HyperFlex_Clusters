@@ -43,23 +43,3 @@ variable "hxdp_end" {
     type = string
     description = "End of HXDP IP Range -.-.-.X"
 }
-variable "vcenter_policy" {
-    type = string
-    description = "vCenter Policy"
-}
-variable "credential_policy" {
-    type = string
-    description = "Credential Policy"
-}
-variable "sys_config_policy" {
-    type = string
-    description = "HyperFlex System Config Policy"
-}
-variable "storage_policy" {
-    type = string
-    description = "Storage Policy"
-}
-variable "network_policy" {
-    type = string
-    description = "Network Policy"
-}

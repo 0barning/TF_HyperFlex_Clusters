@@ -3,23 +3,23 @@ data "intersight_organization_organization" "org" {
 }
 
 data "intersight_hyperflex_vcenter_config_policy" "hyperflex_vcenter_config_policy1" {
-    name = "${var.env}_${var.vcenter_policy}"
+    name = "${var.env}_HyperFlex_vCenter_Policy"
 }
 
 data "intersight_hyperflex_local_credential_policy" "hyperflex_local_credential_policy1" {
-    name = "${var.env}_${var.credential_policy}"
+    name = "${var.env}_Hyperflex_local_credential_policy"
 }
 
 data "intersight_hyperflex_sys_config_policy" "hyperflex_sys_config_policy1" {
-    name = "${var.env}_${var.sys_config_policy}"
+    name = "${var.env}_HyperFlex_System_Config_Policy"
 }
 
 data "intersight_hyperflex_cluster_storage_policy" "hyperflex_cluster_storage_policy1" {
-    name = "${var.env}_${var.storage_policy}"
+    name = "${var.env}_HyperFlex_Storage_Cluster_Policy"
 }
 
 data "intersight_hyperflex_cluster_network_policy" "hyperflex_cluster_network_policy1" {
-    name = "${var.env}_${var.network_policy}"
+    name = "${var.env}_HyperFlex_Cluster_Network_Policy"
 }
 
 resource "intersight_hyperflex_node_config_policy" "hyperflex_node_config_policy1" {
